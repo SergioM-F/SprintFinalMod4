@@ -53,7 +53,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonWSP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#40C251"
@@ -72,10 +72,10 @@
         android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonWSP" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
