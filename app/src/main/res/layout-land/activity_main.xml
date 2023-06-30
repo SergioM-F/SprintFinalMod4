@@ -7,38 +7,37 @@
     android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/AndyRubin"
-        android:contentDescription="@string/el_creador" />
+        app:srcCompat="@drawable/AndyRubin" />
 
     <TextView
         android:id="@+id/textViewDescripcion"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="430dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="50dp"
         android:background="#231C1C"
         android:gravity="center_horizontal|center_vertical"
-        android:text="@string/soy_andy_rubin_creador_de_un_sistema_operativo_bien_conocido_en_busqueda_de_una_oportunidad_laboral"
+        android:text="Soy Andy Rubin, creador de un sistema operativo bien conocido, en busqueda de una oportunidad laboral."
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewExp"
         android:layout_width="0dp"
         android:layout_height="71dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="#8A4A4A"
-        android:text="@string/experiencia_mas_de_30_a_os"
+        android:text="Experiencia: Mas de 30 años."
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/textViewDescripcion"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,23 +47,24 @@
     <TextView
         android:id="@+id/textViewMot"
         android:layout_width="0dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
         android:background="#392222"
-        android:text="@string/nivel_de_motivacion_altamente_comprometido"
+        android:text="Nivel de Motivacion: Altamente Comprometido"
         android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/textViewDescripcion"
+        app:layout_constraintEnd_toEndOf="@+id/textViewExp"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textViewDescripcion"
+        app:layout_constraintStart_toStartOf="@+id/textViewExp"
         app:layout_constraintTop_toBottomOf="@+id/textViewExp" />
 
     <Button
         android:id="@+id/buttonContacto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/contacto"
-        app:layout_constraintEnd_toEndOf="@+id/textViewMot"
-        app:layout_constraintStart_toStartOf="@+id/textViewMot"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMot" />
+        android:layout_marginTop="30dp"
+        android:text="CONTACTO"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
