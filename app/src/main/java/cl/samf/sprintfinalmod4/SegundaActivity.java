@@ -52,9 +52,9 @@ public class SegundaActivity extends AppCompatActivity {
                 String mensaje = binding.EditTextMsje.getText().toString(); // Contenido del correo electrónico
 
                 if (!mensaje.isEmpty()) {
-                    Intent intentMail = new Intent(Intent.ACTION_SENDTO);
-                    intentMail.setData(Uri.parse("mailto:"));
-                    intentMail.putExtra(Intent.EXTRA_EMAIL, mail);
+                    Intent intentMail = new Intent(Intent.ACTION_SEND);
+                    intentMail.setType("text/plain");
+                    intentMail.putExtra(Intent.EXTRA_EMAIL, new String[]{mail});
                     intentMail.putExtra(Intent.EXTRA_SUBJECT, mensaje);
                     if (intentMail.resolveActivity(getPackageManager()) != null) {
                         startActivity(intentMail);
