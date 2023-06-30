@@ -6,4 +6,82 @@
     android:layout_height="match_parent"
     tools:context=".SegundaActivity">
 
+    <TextView
+        android:id="@+id/textViewAbout"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="#0022FF"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/about_don_andy_rubin"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="74dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAbout"
+        app:srcCompat="@drawable/icons8_linkedin"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="76dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/icons8_whatsapp"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonLinkedIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0287D0"
+        android:text="LinkedIN"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#40C251"
+        android:text="Llamar"
+        android:textColor="#4E342E"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/EditTextMsje"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:hint="Escribe el Mensaje"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="CONTACTARME"
+        app:layout_constraintEnd_toEndOf="@+id/EditTextMsje"
+        app:layout_constraintStart_toStartOf="@+id/EditTextMsje"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextMsje" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SprintFinalMod4</string>
+    <string name="el_creador">el Creador</string>
+    <string name="soy_andy_rubin_creador_de_un_sistema_operativo_bien_conocido_en_busqueda_de_una_oportunidad_laboral">Soy Andy Rubin, creador de un sistema operativo bien conocido, en busqueda de una oportunidad laboral.</string>
+    <string name="experiencia_mas_de_30_a_os">Experiencia: Mas de 30 años.</string>
+    <string name="nivel_de_motivacion_altamente_comprometido">Nivel de Motivacion: Altamente Comprometido</string>
+    <string name="contacto">CONTACTO</string>
+    <string name="about_don_andy_rubin">ABOUT DON ANDY RUBIN</string>
 </resources>
