@@ -36,11 +36,11 @@ public class SegundaActivity extends AppCompatActivity {
         binding.buttonWSP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String contact = "+56999999999";
-                String url = "https://api.whatsapp.com/send?phone="+ contact +"&text= Sprint Final Aqui Voy";
-                Intent intentWsp = new Intent(Intent.ACTION_VIEW);
-                intentWsp.setData(Uri.parse(url));
-                startActivity(intentWsp);
+                String numeroTelefono = "+56133";
+
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + numeroTelefono));
+                startActivity(intent);
 
             }
         });
